@@ -251,7 +251,6 @@ fire noise pink 100
 fire noise pink 1000
 fire noise pink 10000
 fire noise white 10000
-play "/run/media/ilia/Media-Base/Музыка/Metallica/1983 - Kill 'em All/07. Phantom Lord.flac"
 fire noise red 1000
 fire noise white 1000
 fire noise pinkl 1000
@@ -665,7 +664,6 @@ set filter 0.9 / 1 -0.98 0.2
 set filter 0.9 / 1 -0.99 0.2
 set filter 0.9 / 1 -0.99 0.1
 set filter 0.9 / 1 -0.99 0.3
-play "/run/media/ilia/Media-Base/Музыка/Cellar Darling/2019 - The Spell/09. Freeze.flac"
 exit
 ping
 status
@@ -690,8 +688,6 @@ fire noise white 20000
 set filter 0.9 0.8 0.7 / 1 -0.97 0.3 0.5
 fire noise white 20000
 fire noise white 2000
-play "/run/media/ilia/Media-Base/Музыка/Below The Sun/2015 - Envoy/1. Outward the Sky.flac"
-play "/run/media/ilia/Media-Base/Музыка/Anthrax/1993 - Sound of White Noise/01. Potters Field.flac"
 fire A 100
 status
 fire noise white 100
