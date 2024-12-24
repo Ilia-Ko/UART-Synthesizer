@@ -1,117 +1,3 @@
-set wave sin 0.5
-fire A 100
-set wave sin 0.1
-fire A 100
-fire A 1000
-set wave sin 0.05
-fire A 1000
-set filter on
-set filter 1
-fire A 1000
-fire noise 100
-fire noise 1000
-play "/run/media/ilia/HiFi-Audio/Metallica/2023 - 72 Seasons/03. Screaming Suicide.flac"
-get equalizer
-set filter off
-play "/run/media/ilia/HiFi-Audio/Metallica/2023 - 72 Seasons/03. Screaming Suicide.flac"
-ping
-exit
-play "/run/media/ilia/HiFi-Audio/Judas Priest/1988 - Ram it Down/01. Ram it Down.flac"
-play "/run/media/ilia/HiFi-Audio/Judas Priest/1988 - Ram it Down/02. Heavy Metal.flac"
-play "/run/media/ilia/HiFi-Audio/Seatbelts & Yoko Kanno/1998 - Cowboy Bebop No Disc/15. Tulivu-Donna Cumberbatch - The Singing Sea.flac"
-fire noise 100
-fire noise 1000
-fire noise 10000
-get filter
-set filter on
-fire noise 10000
-get equalizer
-impr scale F-1/locrian 200
-get wave
-set wave sin 1
-get filter
-stop
-set filter 1 -1
-get filter
-fire noise 10000
-set filter off
-fire noise 10000
-stop
-fire noise 1000
-set filter on
-get equalizer
-set equalizer off
-set filter 1
-fire noise 1000
-set filter 1 1
-fire noise 1000
-set filter 1 1 1
-fire noise 1000
-set filter 1 1 1 1
-fire noise 1000
-set filter 1 1 1 1 1
-fire noise 1000
-set filter 1 1 1 1 1 1
-fire noise 1000
-set filter 1 1 1 1 1 1 1
-fire noise 1000
-set filter 1 1 1 1 1 1 1 1
-fire noise 1000
-set filter 1 1 1 1 1 1 1 1 1
-fire noise 1000
-set filter 1 1 1 1 1 1 1 -1
-fire noise 1000
-set filter -1 1 1 1 1 1 1 1
-fire noise 1000
-set filter 1 1 1 1 1 1 1 1
-fire noise 1000
-set entropy ADC
-fire noise 1000
-set entropy RNG
-fire noise 1000
-get entropy
-set filter off
-set entropy ADC
-set entropy RNG
-fire noise 1000
-get filter
-status
-ping
-stop
-exit
-ping
-fire noise 1000
-get filter
-set filter 1
-set filter on
-fire noise 1000
-set filter 1 -1
-fire noise 1000
-get filter
-fire noise 100
-fire noise 1000
-set filter 1 0 -1
-fire noise 1000
-get filter
-set filter 1 0 0 0 0 -1
-fire noise 1000
-set filter 1 0 0 0 0 0 0 -1
-fire noise 1000
-set filter 1 1
-fire noise 1000
-set filter 1 1 1
-fire noise 1000
-set filter 1 1 1 1
-fire noise 1000 
-set filter 1 1 1 1 1 1
-fire noise 1000 
-set filter 1 1 1 1 1 1 1 1
-fire noise 1000 
-fire noise 10000
-impr scale C-1/dorian 200
-impr scale F-1/dorian 200
-impr scale C/dorian 200
-set wave 3ang
 set wave 3ang 0.5
 get filter
 set filter off
@@ -997,4 +883,118 @@ fire noise red 20000
 fire noise violet 20000
 fire noise blue 20000
 fire noise red 20000
+exit
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise uv 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise uv 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise pink 20000
+fire noise red 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise uv 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise blue 20000
+set wave sin 1.5
+set wave sin 2
+set wave sin 3
+set wave sin 4
+set wave sin 
+fire noise blue 20000
+set wave sin 8
+set wave sin 10
+set wave sin 20
+set wave sin 2
+fire noise blue 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise uv 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise uv 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise pink 20000
+fire noise red 20000
+fire noise pink 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise uv 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise pink 20000
+fire noise red 20000
+fire noise pink 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise uv 20000
+set wave sin 10
+fire noise red 20000
+fire noise pink 20000
+fire noise white 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise uv 20000
+fire noise violet 20000
+fire noise uv 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise white 20000
+fire noise pink 20000
+fire noise red 20000
+stop
+fire noise red 20000
+fire noise white 20000
+set filter 1 / 0.083333 -0.66667 0 0.66667 -0.8333333
+set filter off
+get filter
+fire noise white 20000
+set filter on
+set filter off
+set filter on
+set filter off
+fire noise white 20000
+set filter 0.01 / 0.083333 -0.66667 0 0.66667 -0.8333333
+set filter on
+set filter off
+set filter on
+set filter off
+get equalizer
+set equalizer on
+set equalizer off
+set equalizer 48e3 24e3
+get equalizer
+status
 exit
