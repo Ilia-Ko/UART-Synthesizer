@@ -1,0 +1,27 @@
+{
+    "configurations":
+    [
+        {
+            "name": "vscode_stm32_c_cpp_properties",
+
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+
+            "includePath": [
+                "/home/ilia/Prog/Micro/STM32/STM32CubeH7/Drivers/CMSIS/Include/",
+                "/home/ilia/Prog/Micro/STM32/STM32CubeH7/Drivers/CMSIS/Device/ST/STM32H7xx/Include/",
+                "/home/ilia/Prog/Micro/STM32/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Inc",
+                "/home/ilia/Prog/Micro/STM32/STM32CubeH7/Drivers/CMSIS/DSP/Include"
+            ],
+
+            "defines": [
+                "STM32H743xx",
+                "USE_FULL_LL_DRIVER",
+                "ARM_MATH_CM7"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

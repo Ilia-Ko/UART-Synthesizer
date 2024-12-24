@@ -1,0 +1,1000 @@
+set wave sin 0.5
+fire A 100
+set wave sin 0.1
+fire A 100
+fire A 1000
+set wave sin 0.05
+fire A 1000
+set filter on
+set filter 1
+fire A 1000
+fire noise 100
+fire noise 1000
+play "/run/media/ilia/HiFi-Audio/Metallica/2023 - 72 Seasons/03. Screaming Suicide.flac"
+get equalizer
+set filter off
+play "/run/media/ilia/HiFi-Audio/Metallica/2023 - 72 Seasons/03. Screaming Suicide.flac"
+ping
+exit
+play "/run/media/ilia/HiFi-Audio/Judas Priest/1988 - Ram it Down/01. Ram it Down.flac"
+play "/run/media/ilia/HiFi-Audio/Judas Priest/1988 - Ram it Down/02. Heavy Metal.flac"
+play "/run/media/ilia/HiFi-Audio/Seatbelts & Yoko Kanno/1998 - Cowboy Bebop No Disc/15. Tulivu-Donna Cumberbatch - The Singing Sea.flac"
+fire noise 100
+fire noise 1000
+fire noise 10000
+get filter
+set filter on
+fire noise 10000
+get equalizer
+impr scale F-1/locrian 200
+get wave
+set wave sin 1
+get filter
+stop
+set filter 1 -1
+get filter
+fire noise 10000
+set filter off
+fire noise 10000
+stop
+fire noise 1000
+set filter on
+get equalizer
+set equalizer off
+set filter 1
+fire noise 1000
+set filter 1 1
+fire noise 1000
+set filter 1 1 1
+fire noise 1000
+set filter 1 1 1 1
+fire noise 1000
+set filter 1 1 1 1 1
+fire noise 1000
+set filter 1 1 1 1 1 1
+fire noise 1000
+set filter 1 1 1 1 1 1 1
+fire noise 1000
+set filter 1 1 1 1 1 1 1 1
+fire noise 1000
+set filter 1 1 1 1 1 1 1 1 1
+fire noise 1000
+set filter 1 1 1 1 1 1 1 -1
+fire noise 1000
+set filter -1 1 1 1 1 1 1 1
+fire noise 1000
+set filter 1 1 1 1 1 1 1 1
+fire noise 1000
+set entropy ADC
+fire noise 1000
+set entropy RNG
+fire noise 1000
+get entropy
+set filter off
+set entropy ADC
+set entropy RNG
+fire noise 1000
+get filter
+status
+ping
+stop
+exit
+ping
+fire noise 1000
+get filter
+set filter 1
+set filter on
+fire noise 1000
+set filter 1 -1
+fire noise 1000
+get filter
+fire noise 100
+fire noise 1000
+set filter 1 0 -1
+fire noise 1000
+get filter
+set filter 1 0 0 0 0 -1
+fire noise 1000
+set filter 1 0 0 0 0 0 0 -1
+fire noise 1000
+set filter 1 1
+fire noise 1000
+set filter 1 1 1
+fire noise 1000
+set filter 1 1 1 1
+fire noise 1000 
+set filter 1 1 1 1 1 1
+fire noise 1000 
+set filter 1 1 1 1 1 1 1 1
+fire noise 1000 
+fire noise 10000
+impr scale C-1/dorian 200
+impr scale F-1/dorian 200
+impr scale C/dorian 200
+set wave 3ang
+set wave 3ang 0.5
+get filter
+set filter off
+impr scale C/blues 200
+impr scale B-1/blues 200
+impr scale G-1/blues 200
+fire noise 400
+fire noise white 400
+fire noise white 1000
+set wave sin 0.5
+fire noise white 1000
+set wave sin 0.2
+fire noise white 1000
+fire noise red 1000
+fire noise red 10000
+status
+fire noise red 10000
+status
+fire noise red 10000
+status
+set wave 0.2
+set wave 3ang 0.2
+status
+fire noise red 10000
+set wave 3ang 0.2
+fire noise red 10000
+set wave 3ang 0.4
+status
+fire noise red 10000
+status
+fire noise pink 10000
+fire noise red 10000
+set wave 3ang 0.4
+fire noise red 10000
+stop
+set wave 3ang 0.4
+fire noise red 10000
+stop
+fire noise pink 10000
+set wave 3ang 0.4
+fire noise pink 10000
+stop
+set wave 3ang 0.4
+fire noise red 10000
+stop
+set wave 3ang 0.4
+fire noise red 10000
+set wave 3ang 0.4
+fire noise red 10000
+fire noise pink 10000
+stop
+set filter 1
+set filter on
+fire noise white 10000
+set filter 1 0 0 0 0 0 0 9
+fire noise white 10000
+get filter
+set filter 1 -1
+fire noise white 10000
+stop
+fire noise white 10000
+fire noise pink 10000
+stop
+set filter 1 -2 1
+fire noise pink 10000
+fire noise white 10000
+stop
+set filter 1 -3 3 -1
+fire noise white 10000
+set filter 1 -4 6 -4 1
+fire noise white 10000
+set filter 1 4 6 4 1
+fire noise white 10000
+set filter 1 5 10 10 5 1
+fire noise white 10000
+set filter 1 6 15 20 15 6 1
+fire noise white 10000
+set filter 1 2 3 4 5 6 7 8
+fire noise white 10000
+set filter 1 -2 3 4 5 6 7 8
+fire noise white 10000
+set filter 1 -2 3 -4 5 6 7 8
+fire noise white 10000
+set filter 1 -2 3 -4 5 -6 7 8
+set filter 1 -2 3 -4 5 -6 7 -8
+fire noise white 10000
+set filter 1 -2 3 -4 5 -6 -7 -8
+set filter 1 -2 3 -4 5 -6 7 -8
+fire noise white 10000
+status
+fire F 1000
+fire noise white 10000
+stop
+set entropy ADC
+fire noise white 10000
+stop
+set entropy RNG
+fire noise red 10000
+status
+set filter 1 -2 3 -4 5 -6 7 -8
+fire noise white 10000
+set filter 1 -2 3 -4 -5 -6 7 -8
+set filter 1 -2 3 -4 5 -6 7 -8
+set filter -1 -2 3 -4 5 -6 7 -8
+fire noise white 10000
+set filter 1 -2 3 -4 5 -6 7 -8
+set filter 1 -2 3 -4 5 -6 7 8
+set filter 1 -2 3 -4 5 6 7 8
+set filter on
+fire noise white 10000
+set filter 1 -2 3 -4 5 -6 7 8
+set filter 1 -2 3 -4 5 -6 7 -8
+set filter 1 -2 3 -4 5 6 7 -8
+fire noise white 10000
+set filter 1 2 3 -4 5 6 7 -8
+status
+set entropy RNG
+fire noise white 10000
+stop
+fire noise red 1000
+fire noise white 10000
+fire noise pink 1000
+fire noise white 10000
+set filter 1 2 3 -4 5 -6 7 -8
+set filter 1 2 3 -4 5 -6 7 8
+fire noise pink 1000
+fire noise white 10000
+set filter 1 -2 3 -4 5 -6 7 8
+set filter 1 -2 3 -4 5 6 7 8
+set filter 1 1 1 1 1 1 1 1
+fire noise white 10000
+set filter 1 1 1 -1 1 1 1 1
+set filter 1 -1 1 1 1 1 1 1
+set filter 1 1 1 1 1 1 1 1
+fire noise white 10000
+set filter 1 1 1 1 1 1 1 8
+set filter 1 1 8 1 1 1 1 1
+fire noise white 10000
+fire noise pink 1000
+fire noise white 10000
+stop
+set filter off
+fire noise pink 1000
+fire noise white 1000
+set filter on
+fire noise white 10000
+set filter 1 1 8 1 1 1 2 1
+set equalizer 440
+get equalizer
+set filter 1 1
+fire noise white 10000
+set equalizer 440 220
+get equalizer
+set filter 1 1 1
+fire noise white 10000
+set filter 0 1 1
+set filter 0.1 1 1
+fire noise white 10000
+set filter 0.1 11 1
+set filter 0.1 1 1
+set filter 0.1 2 1
+fire noise white 10000
+set filter 0.1 2 2
+set filter 1 2 2
+set equalizer 50
+get equalizer
+set equalizer 40 50 60 70 80 90 100
+set equalizer 50 60 70 80 90 100
+get equalizer
+set filter 1 1 1 1 1 1 1
+fire noise white 10000
+set equalizer 50 52 54 55 56 58 60
+set filter 1 1 1 1 1 1 1 0
+get filter
+fire noise white 10000
+set equalizer 90 95 97 98 99 100 101 102
+get equalizer
+fire noise white 10000
+set equalizer 50 100 200 400 800 1600 3200 6400
+get equalizer
+fire noise white 10000
+set filter 1 -1 1 -1 1 -1 1 -1
+fire noise white 10000
+set equalizer off
+set equalizer 
+get equalizer
+set equalizer 48000
+set equalizer 47999
+get equalizer
+set equalizer 47999.999
+set equalizer 47999.99
+fire noise white 10000
+fire noise pink 1000
+get filter
+fire noise white 10000
+set filter off
+set filter on
+set filter 1 -0.9 1 -1.1 1 -0.9 1 -1
+get filter
+fire noise white 10000
+set equalizer 47999 24000 16000 12000 9600 8000
+set equalizer 47999 24000 16000 12000 9600 8000 6857
+set equalizer 47999 24000 16000 12000 9600 8000 6857 6000
+fire noise white 10000
+set filter 1 -0.9
+fire noise white 10000
+get filter
+set filter 1 -0.99
+set filter 1 -0.999
+set filter 1 -0.9999
+fire noise white 1000
+set filter 1 -0.9999 0 0 0 0 1
+get filter
+fire noise white 1000
+fire noise red 1000
+fire noise red 10000
+set wave 3ang 0.3
+fire F 1000
+quit
+ping
+exit
+fire noise
+exit
+fire noise 
+exit
+fire noise red
+exit
+fire noise pink 400
+fire noise white 3
+fire noise red 300
+fire noise red 1000
+fire noise red 10000
+stop
+quit
+ping
+pong
+status
+help
+pong
+ping
+status
+ping
+status
+get filter
+fire F 100
+fire F 1000
+get wave
+fire noise 100
+fire noise white 100
+fire noise pink 100
+fire noise pink 1000
+fire noise pink 10000
+fire noise white 10000
+play "/run/media/ilia/Media-Base/Музыка/Metallica/1983 - Kill 'em All/07. Phantom Lord.flac"
+fire noise red 1000
+fire noise white 1000
+fire noise pinkl 1000
+fire noise pink 1000
+fire noise white 1000
+fire noise pink 1000
+fire noise white 1000
+get filter
+fire noise pink 1000
+fire noise white 1000
+fire noise pink 1000
+fire noise white 1000
+fire noise pink 1000
+fire noise white 1000
+fire noise pink 1000
+fire noise white 1000
+fire noise pink 1000
+fire noise white 1000
+fire noise pink 1000
+fire noise white 1000
+fire noise pink 1000
+fire noise pink 10000
+fire noise white 1000
+fire noise red 1000
+fire noise white 1000
+fire noise pink 1000
+fire noise pink 10000
+fire noise white 1000
+fire noise pink 10000
+fire noise red 1000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire E-2 1000
+fire E-2 10000
+fire noise pink 3000
+set wave sin 2
+fire noise pink 3000
+set wave sin 3
+fire noise pink 3000
+fire A 1000
+set wave sin 0.97
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+set wave sin 2
+fire noise pink 3000
+set wave sin 1.5
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+get filter
+set filter 1 -1
+set filter 1 -1 / 1
+get filter
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+set filter 1 -1 / 1
+get filter
+fire noise white 3000
+set filter on
+fire noise white 3000
+set filter off
+fire noise white 3000
+set filter on
+fire noise white 3000
+exit
+status
+fire noise white 3000
+fire noise blue 3000
+fire noise white 3000
+get filter
+set filter 0.5 0 -0.5 / 1
+get filter
+fire noise white 3000
+set filter on
+fire noise white 3000
+set filter -0.0833333 0.666667 0 -0.666667 +0.08333333 / 1
+get filter
+fire noise white 3000
+set filter 0.5 0 -0.5 / 1
+fire noise white 3000
+set filter -0.0833333 0.666667 0 -0.666667 +0.08333333 / 1
+fire noise white 3000
+set filter 0.5 0 -0.5 / 1
+fire noise white 10000
+set filter -0.0833333 0.666667 0 -0.666667 +0.08333333 / 1
+set filter 0.5 0 -0.5 / 1
+set filter -0.0833333 0.666667 0 -0.666667 +0.08333333 / 1
+set filter 0.5 0 -0.5 / 1
+set filter -0.0833333 0.666667 0 -0.666667 +0.08333333 / 1
+fire noise white 10000
+help
+fire noise white 10000
+fire noise blue 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise blue 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise red 10000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise blue 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise blue 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise blue 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise red 3000
+fire noise blue 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise blue 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise white 3000
+fire noise pink 3000
+fire noise red 3000
+fire noise pink 3000
+fire noise red 3000
+exit
+fire noise red 3000
+fire noise pink 3000
+fire noise white 3000
+fire noise blue 3000
+fire noise violet 3000
+fire noise blue 3000
+fire noise violet 3000
+fire noise blue 3000
+fire noise violet 3000
+fire noise blue 3000
+fire noise violet 3000
+fire noise blue 3000
+fire noise violet 3000
+fire noise white 3000
+fire noise violet 3000
+fire noise white 3000
+fire noise red 3000
+fire noise white 3000
+fire noise red 3000
+fire noise violet 3000
+fire noise red 3000
+fire noise red 10000
+fire noise pink 10000
+fire noise red 10000
+fire noise pink 10000
+fire noise white 10000
+fire noise blue 10000
+fire noise violet 10000
+fire noise blue 10000
+fire noise white 10000
+fire noise pink 10000
+fire noise red 10000
+fire noise white 10000
+get filter
+set filter 1 / -0.98
+get filter
+fire noise white 10000
+set filter on
+fire noise white 10000
+status
+set filter on
+fire noise white 10000
+get filter
+set filter 1 / -0.99
+fire noise white 10000
+status
+set filter 1 / 1 -0.99
+get filter
+fire noise white 10000
+status
+fire noise white 10000
+set filter on
+set filter off
+fire noise white 10000
+set filter 1 / 1 -0.99 -0.99
+set filter on
+fire noise white 10000
+get filter
+set filter 1 / 1 -0.99 -0.01
+fire noise white 10000
+set filter 1 / 1 -0.99 0.01
+fire noise white 10000
+set filter 0.999 / 1 -0.99 0.01
+set filter 0.99 / 1 -0.99 0.01
+fire noise white 10000
+set filter 0.9 / 1 -0.99 0.01
+set filter 0.95 / 1 -0.99 0.01
+fire noise white 20000
+set filter 0.94 / 1 -0.99 0.01
+set filter 0.935 / 1 -0.99 0.01
+set filter 0.93 / 1 -0.99 0.01
+set filter 0.92 / 1 -0.99 0.01
+set filter 0.92 / 1 -0.99 0.001
+set filter 0.92 / 1 -0.99 0.00
+fire noise white 20000
+set filter 0.92 / 1 -0.99 0.001
+set filter 0.92 / 1 -0.99 0.01
+set filter 0.92 / 1 -0.99 0.1
+set filter 0.92 / 1 -0.99 0.01
+set filter 0.92 / 1 -0.99 0.2
+fire noise white 20000
+set filter 0.92 / 1 -0.99 0.7
+set filter 0.92 / 1 -0.99 0.3
+set filter 0.92 / 1 -0.99 0.2
+set filter 0.92 / 1 -0.99 0.4
+set filter 0.92 / 1 -0.99 0.2
+fire noise white 20000
+set filter 0.92 / 1 -0.99 0.2
+set filter 0.92 / 1 -0.99 0.25
+set filter 0.92 / 1 -0.99 0.3
+set filter 0.92 / 1 -0.99 0.4
+set filter 0.92 / 1 -0.99 0.1
+set filter 0.92 / 1 -0.99 0.2
+fire noise white 20000
+set filter 0.9 / 1 -0.99 0.2
+set filter 0.8 / 1 -0.99 0.2
+fire noise white 20000
+set filter 0.8 / 1 -0.99 0.2
+fire noise white 20000
+set filter 0.8 / 1 -0.99 0.2
+set filter 0.85 / 1 -0.99 0.2
+fire noise white 20000
+status
+set filter 0.9 / 1 -0.99 0.2
+fire noise white 20000
+set filter 0.9 / 1 -0.98 0.2
+set filter 0.9 / 1 -0.95 0.2
+set filter 0.9 / 1 -0.9 0.2
+stop
+fire noise white 20000
+set filter 0.9 / 1 -0.8 0.2
+set filter 0.9 / 1 -0.1 0.2
+set filter 0.9 / 1 -0.2 0.2
+fire noise white 20000
+set filter 0.9 / 1 -0.3 0.2
+set filter 0.9 / 1 -0.4 0.2
+set filter 0.9 / 1 -0.5 0.2
+set filter 0.9 / 1 -0.6 0.2
+set filter 0.9 / 1 -0.7 0.2
+set filter 0.9 / 1 -0.8 0.2
+set filter 0.9 / 1 -0.9 0.2
+fire noise white 20000
+fire noise red 20000
+stop
+exit
+set filter 0.9 / 1 -0.8 0.2
+set filter on
+fire noise white 20000
+status
+set filter 0.9 / 1 -0.9 0.2
+set filter 0.9 / 1 -0.95 0.2
+set filter 0.9 / 1 -0.98 0.2
+set filter 0.9 / 1 -0.99 0.2
+set filter 0.9 / 1 -0.99 0.1
+set filter 0.9 / 1 -0.99 0.3
+play "/run/media/ilia/Media-Base/Музыка/Cellar Darling/2019 - The Spell/09. Freeze.flac"
+exit
+ping
+status
+exit
+ping
+set filter 0.9 / 1 -0.99 0.3
+set filter on
+fire noise white 20000
+set filter 0.9 / 1 -0.98 0.3
+set filter 0.9 / 1 -0.97 0.3
+set filter 0.9 / 1 -0.97 0.2
+set filter 0.9 / 1 -0.97 0.6
+set filter 0.9 / 1 -0.97 0.4
+fire noise white 20000
+set filter 0.9 / 1 -0.97 0.2
+set filter 0.9 0.8 / 1 -0.97 0.2
+set filter 0.9 0.8 / 1 -0.97 0.1
+set filter 0.9 0.8 / 1 -0.97 0.3
+set filter 0.9 0.8 0.7 / 1 -0.97 0.3
+set filter 0.9 0.8 0.7 / 1 -0.97 0.3 0.5
+fire noise white 20000
+set filter 0.9 0.8 0.7 / 1 -0.97 0.3 0.5
+fire noise white 20000
+fire noise white 2000
+play "/run/media/ilia/Media-Base/Музыка/Below The Sun/2015 - Envoy/1. Outward the Sky.flac"
+play "/run/media/ilia/Media-Base/Музыка/Anthrax/1993 - Sound of White Noise/01. Potters Field.flac"
+fire A 100
+status
+fire noise white 100
+fire noise white 20000
+fire noise pink 20000
+fire noise red 20000
+fire noise blue 20000
+fire noise violet 20000
+fire noise red 20000
+fire A 1000
+fire C 1000
+fire C 30000
+set wave sin3
+set wave sin5
+set wave 3ang
+set wave rect
+set wave saw
+set wave 3ang
+set wave 3ang
+set wave saw 2
+set wave rect 2
+set wave sin 1
+get filter
+impr scale C/mixolydian 200
+set filter 1 1 /1
+set filter 1 1 / 1
+get filter
+set filter on
+set filter 2 1 / 1
+get filter
+set filter 2 0.1 / 1
+set filter 2 0.1 0 0 0 -1 / 1
+set filter on
+impr scale C/mixolydian 200
+set filter 0.9 0.8 0.7 / 1 -0.97 0.3 0.5
+get filter
+set filter 0.9 0.8 0.7 / 1 -0.97 0.3 0.5
+get filter
+set filter 0.9 / 1 -0.97 0.3 0.5
+get filter
+set filter 0.9 / 1 -0.97 0.3
+get filter
+set filter 0.9 / 1 -0.97 0.3
+get filter
+set filter 0.9 / 1 -0.97
+get filter
+set beat 150
+impr scale D/blues 150
+impr scale C/blues 150
+impr scale C/maj 150
+set filter 0.5 0 -0.5 / 1
+impr scale C/blues 150
+set filter -0.08333 0.6667 0 -0.6667 +0.083333 / 1
+impr scale B-1/blues 150
+impr scale G-1/blues 150
+set filter -0.08333 0.6667 0 -0.6667 +0.083333 / 1 -0.9
+set filter -0.08333 0.6667 0 -0.6667 +0.083333 / 1 -0.97
+impr scale G/blues 150
+impr scale G-1/blues 150
+set filter -0.08333 0.6667 0 -0.6667 +0.083333 / 1 -0.97 0.3
+set filter -0.08333 0.6667 0 -0.6667 +0.083333 / 1 -0.97 0.1
+set filter -0.08333 0.6667 0 -0.6667 +0.083333 / 1 -0.97 0.01
+set filter -0.08333 0.6667 0 -0.6667 +0.083333 / 1 -0.95
+impr scale G-1/blues-9 150
+impr scale G-1/blues-9 100
+impr scale G-1/blues-9 50
+impr scale G-1/blues-9 100
+set wave 3ang
+set wave sin3
+set wave 3ang
+set wave sin
+set wave sin5
+set filter -0.08333 0.6667 0 -0.6667 +0.083333 / 1 -0.94
+set filter 1 / 1
+set filter 1 1 / 1
+set filter 1 1 1 / 1
+set filter 1 1 1 -1 / 1
+get filter
+set filter 1 1 1 -1 -1 -1 / 1
+set filter 1 0 1 -1 -1 -1 / 1
+set filter 1 0 1 -1 -1 -1 -9 / 1
+set filter 1 0 1 -1 -1 -1 5 / 1
+set filter 1 0 1 -1 -1 -1 5 / 1 -0.93
+set filter 1 0 1 -1 -1 -1 5 / 1 -0.91
+set filter 1 0 1 -1 -1 -1 5 / 1 -0.9
+set filter 1 0 1 -1 -1 -1 5 / 1 -0.1
+set filter 1 0 1 -1 -1 -1 0 / 1 -0.1
+set filter 1 0 1 -1 -1 -1 0 / 1 -0.1 0.01
+set filter 1 0 1 -1 -1 -1 0 / 1 -0.1 0.01 0 0 2
+set filter 1 0 1 -1 -1 -1 0 / 1 -0.1 0.01 0 0 1
+set filter 1 0 1 -1 -1 -1 0 / 1 -0.1 0.01 0 0 -1
+set filter 1 0 1 -1 -1 -1 0 / 1 -0.1 0.01 0 0 -0.01
+set filter 1 0 1 -1 -1 -1 0 / 1 -0.1 0.01 0 0 -0.1
+set filter 1 0 1 -1 -1 -1 0 / 1 -0.1 0.01 0 0 -0.1 0.2
+impr scale A-1/blues-9 100
+impr scale F-1/blues-9 100
+impr scale F-1/blues-9 200
+impr scale F-1/blues-7 200
+impr scale F-1/chrom 200
+impr scale A-1/chrom 200
+stop
+exit
+status
+set wave sin 1
+fire F 10000
+set wave sin 1.2
+set wave sin 1
+set wave sin 0.97
+set wave sin 0.95
+fire F 10000
+set wave sin 1.2
+set wave sin5 1.2
+set wave sin5 1
+set wave 3ang 1
+fire F 20000
+set wave 3ang 1.2
+set wave 3ang 1.4
+set wave 3ang 1
+set wave saw 1
+set wave saw 1.2
+set wave saw 1.4
+set wave saw 1
+impr board 200
+set wave sin
+impr chaos 200
+impr ladder 200
+impr scale 200
+impr scale F-1/mixolydian 200
+stop
+status
+impr scale F-1/mixolydian 200
+impr scale 200
+status
+stop
+get beat
+impr ladder
+impr F-1/maj
+impr scale F-1/maj
+set beat 150
+set beat 100
+set beat 300
+stop
+impr scale F-1/maj
+status
+get pattern
+set pattern 1 2 1 2
+set pattern mutability 
+set pattern mutability 0.01
+get pattern
+set pattern 1 1 1 1
+stop
+impr scale F-1/maj
+get pattern
+impr scale G-1/japanese
+impr scale G-1/blues
+impr scale G-1/blues-9
+impr scale A-1/blues-9
+set beat 200
+set filter 0.5 0 -0.5 / 1 -0.97
+set filter on
+set filter 1 -1 / 1 -0.97
+set filter 1 / 1 -0.97
+get filter
+set filter 1 / 1 -0.97
+set filter 1 / 1 -0.96
+set filter 1 / 1 -0.1
+set filter 1 / 1
+set filter 1 1 / 1
+get filter
+set filter 1 1 0 0 0 2 / 1
+set filter 1 1 0 0 0 1 / 1
+set wave 3ang
+set wave rect
+set wave sin5
+set filter 1 -0.1 0 0 0 -0.2 / 1
+set filter 1 0.1 0 0 0 -0.2 / 1
+set wave sin 0.9
+get pattern
+set pattern stable
+set pattern 1 1 1 1
+get pattern
+set pattern 1 2 1 2
+set pattern 1 1 1/2 3/2
+stop
+fire noise white 20000
+fire noise blue 20000
+fire noise pink 20000
+fire noise red 20000
+fire noise violet 20000
+fire noise blue 20000
+fire noise red 20000
+exit
