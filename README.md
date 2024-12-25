@@ -29,8 +29,8 @@ You will need the following hardware components to launch this synthesizer:
 4. Plug STlink device and USB-to-UART adapter into your PC
 5. Plug USB-to-UART adapter into your PC
 
-Example setup may look like following:
-![See 'Setup.jpg' from the root directory](Setup.jpg "Example setup for UART-Synthesizer")
+Example setup (for low-impedance audio speakers):
+![See 'Setup.jpg' from the root directory](Setup.jpg "Example setup for UART-Synthesizer with low-impedance audio speakers")
 
 ## Running
 1. Update `Makefile` with your `CubeH7` installation paths (as well as `.vscode/*.json` files for proper syntax highlighting when using VSCode)
