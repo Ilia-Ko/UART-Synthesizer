@@ -35,9 +35,13 @@ Example setup (for low-impedance audio speakers):
 ## Running
 1. Update `Makefile` with your `CubeH7` installation paths (as well as `.vscode/*.json` files for proper syntax highlighting when using VSCode)
 2. Run `make` in the project's root directory to compile the firmware
-3. Flash the firmware to 'H743 with `st-flash` utility
+3. Flash the firmware to 'H743 with `st-flash` utility or VSCode's graphical interface
 4. Reset 'H743 by pressing reset button
 5. Launch Python frontend with `python src/UART-Bridge.py`
 6. Enter `help` to view available commands and their descriptions
 7. Use tab-completions when typing commands
 8. Type `exit` or `quit` to terminate Python frontend
+
+## Further details
+
+Additional information can be found in file 'Презентация.pdf' (not translated yet...)
