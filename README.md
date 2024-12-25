@@ -30,7 +30,7 @@ You will need the following hardware components to launch this synthesizer:
 5. Plug USB-to-UART adapter into your PC
 
 Example setup may look like following:
-Setup.jpg 
+![See 'Setup.jpg' from the root directory](Setup.jpg "Example setup for UART-Synthesizer")
 
 ## Running
 1. Update `Makefile` with your `CubeH7` installation paths (as well as `.vscode/*.json` files for proper syntax highlighting when using VSCode)
