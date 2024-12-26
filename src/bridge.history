@@ -1,8 +1,3 @@
-set wave 3ang 0.5
-get filter
-set filter off
-impr scale C/blues 200
-impr scale B-1/blues 200
 impr scale G-1/blues 200
 fire noise 400
 fire noise white 400
@@ -993,4 +988,13 @@ set equalizer off
 set equalizer 48e3 24e3
 get equalizer
 status
+exit
+status
+ping
+fire A 1000
+set wave 3ang
+fire A 1000
+fire noise pink 100
+fire noise pink 1000
+help
 exit
