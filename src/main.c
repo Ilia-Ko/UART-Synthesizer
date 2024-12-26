@@ -26,8 +26,6 @@
 // LED on |PA1| (active LOW)
 // DAC1.OUT1 on |PA4|
 // DAC1.OUT2 on |PA5|
-// OPAMP1.OUTon |PC4|
-// OPAMP2.OUTon |PE7|
 // ADC3.INP0 on |PC2|
 // USART1.TX on |PA9|, PB6,PB14 // USART2.TX on PA2,PD5   // USART6.TX on PG14,PC6    // USART3.TX on PD8,PC10,PB10
 // USART1.RX on |PA10|,PB7,PB15 // USART2.RX on PA3,PD6   // USART6.RX on PG9 ,PC7    // USART3.RX on PD9,PC11,PB11
@@ -38,7 +36,7 @@
 typedef unsigned long bool;
 
 // --- --- --- UART defines --- --- ---
-#define BAUD_RATE (2000*1000UL)     // Signalling rate for UART to maintain 768 kbps audio transfer
+#define BAUD_RATE (2000*1000UL)     // Signalling rate for UART to maintain 1152 kbps audio transfer
 #define RX_BUF_SIZE (256*3)         // RAM buffer length to receive commands
 #define RX_BUF_HALF (RX_BUF_SIZE/2) // Half of the RX buffer
 #define TX_BUF_SIZE 256             // RAM buffer length to compose messages
@@ -65,7 +63,7 @@ typedef unsigned long bool;
 #define MSG_INVD_PATT   "Invalid pattern beat. "
 #define MSG_INVD_EQFR   "Invalid frequency spec. "
 #define MSG_EQ_OUTRANGE "Frequency out of range. "
-#define MSG_ILL_FILTER  "Warning: IIR denominator 0-th coefficient too close to zero! Replacing with 1. " 
+#define MSG_ILL_FILTER  "Warning: IIR denominator 0-th coefficient too close to zero! Replacing with 1. "
 #define MSG_SET_RNG     "Defined entropy source: hardware RNG"
 #define MSG_SET_ADC     "Defined entropy source: floating ADC"
 #define MSG_SET_FILT    "Filter ON:"
@@ -80,11 +78,11 @@ typedef unsigned long bool;
 #define CMD_STATUS      "status"        // > status
 #define CMD_STOP        "stop"          // > stop
 #define CMD_FIRE        "fire "         // > fire A 300         > fire 314.2 200
-#define CMD_IMPROV      "impr "         // > impr chaos 400     > impr scale f-maj 250      > impr board 300
+#define CMD_IMPROV      "impr "         // > impr chaos 400     > impr scale f/maj 250      > impr board 300
 #define CMD_PLAY        "play"          // > play ['path/to/file.flac' (processed by PC)]
 #define CMD_SET_WAVE    "set wave "     // > set wave sin 1.0   > set wave rect 0.5
 #define CMD_SET_RAND    "set entropy "  // > set entropy RNG    > set entropy ADC
-#define CMD_SET_FILT    "set filter "   // > set filter on      > set filter off    > set filter 1.0 -4 +3e-2 0.0
+#define CMD_SET_FILT    "set filter "   // > set filter on      > set filter off    > set filter 1.0 -4 +3e-2 0.0 / 1 -0.1 0 5
 #define CMD_SET_BEAT    "set beat "     // > set beat 250
 #define CMD_SET_PATT    "set pattern "  // > set pattern 1 1 0.5 0.5 1  > set pattern mutable   > set pattern stable
 #define CMD_SET_EQ      "set equalizer "// > set equalizer 100.0 800.0 365.0 440.0 3600.0
@@ -116,17 +114,28 @@ enum IMPROV_MODE { LADDER, RAND_FREQS, RAND_KEYS, RAND_KEYS_SCALE };    // Impro
 enum RND_SOURCE { HARD_RNG, ADC_FLOAT };    // Entropy sources
 enum NOISE_TYPE { NOISE_WHITE, NOISE_PINK, NOISE_RED, NOISE_BLUE, NOISE_VIOLET, NOISE_UV };
 
+// Some filters for noise synthesis
+// Differencing filters
+#define DIFF_LEN 5
+#define DIFF2_LEN 5
+const float32_t DIFF_B[DIFF_LEN] = {-1/12.0f, 2/3.0f, 0.0f, -2/3.0f, 1/12.0f};
+const float32_t DIFF2_B[DIFF2_LEN] = {-1/12.0f, 4/3.0f, -5/2.0f, 4/3.0f, -1/12.0f};
+// Pinking filter by Julius Orion Smith III
+#define PINK_LEN 4
+const float32_t PINK_B[PINK_LEN] = {0.049922035f, -0.095993537f, 0.050612699f, -0.004408786f};
+const float32_t PINK_A[PINK_LEN] = {1.0f,         -2.494956002f, 2.017265875f, -0.522189400f};
+
 // UART globals
 LL_RCC_ClocksTypeDef clk;   // RCC clock frequencies
 char rxBuf[RX_BUF_SIZE];    // Receive buffer
 char txBuf[TX_BUF_SIZE];    // Send buffer
 char cmdBuf[CMD_BUF_SIZE];  // Command buffer
 uint32_t cmdLen;            // Length of command inside CMD buf
-uint32_t rxPos;    // Current position inside RX buffer, used by UART
-uint32_t sPos;     // Current sample position in RX buffer, used by DAC
+uint32_t rxPos;             // Current position inside RX buffer, used by UART
+uint32_t sPos;              // Current sample position in RX buffer, used by DAC
 bool isOverflow;            // Whether buffer was overflown
 volatile bool isPending;    // Whether a command is pending
-enum REGIME regime;// Current operation regime
+enum REGIME regime;         // Current operation regime
 enum IMPROV_MODE improvMode;// Current improvisation mode (active in IMPROV regime)
 void SendMessage(const char* msg, uint32_t msgLen);
 
@@ -302,7 +311,7 @@ void ChangeFreq(float32_t newFreq) {    // Set the next wave frequency to be syn
 void FireOneShot(uint32_t durMS) {      // Issue a 'durMS' milliseconds delay
     LL_TIM_DisableCounter(TIM3);            // Stop TIM3 anyway
     LL_TIM_SetCounter(TIM3, 0);
-    LL_TIM_SetAutoReload(TIM3, 2*durMS);   // Program TIM3 for 'durMS' delay
+    LL_TIM_SetAutoReload(TIM3, 2*durMS);    // Program TIM3 for 'durMS' delay
     LL_TIM_EnableCounter(TIM3);             // Fire TIM3
 }
 void RestartBaseTIM(void) { // Reset base timer TIM2 and start it again
@@ -393,12 +402,6 @@ float32_t FilterSample(float32_t next) {                // Perform one step of l
     return s;
 }
 void DefineFilter(const float32_t cA[FILT_DEPTH], const float cB[FILT_DEPTH]) { // Setup globals for IIR-filtering
-    // // Calculate filter normalizator
-    // float32_t sum = 0.0f;
-    // for (uint32_t i = 0; i < FILT_DEPTH; i++)
-    //     sum += coeff[i];
-    // if (sum < 0.0f) sum = -sum; // Do not change signs of filter coeffs
-
     // Update the IIR coefficients
     memcpy(IIR_A, cA, sizeof(float32_t)*FILT_DEPTH);
     memcpy(IIR_B, cB, sizeof(float32_t)*FILT_DEPTH);
@@ -626,7 +629,7 @@ bool ExecCommand(char* cmd, uint32_t cmdLen) {    // Execute user command and re
             pos += snprintf(txBuf+pos, TX_BUF_SIZE-pos, ", beat = %ld ms", beatDurMS);
             break;
         case STREAM:
-            pos += snprintf(txBuf+pos, TX_BUF_SIZE-pos, "streaming 16-bit mono 48 kHz (768 kbps)");
+            pos += snprintf(txBuf+pos, TX_BUF_SIZE-pos, "streaming 12-bit stereo 48 kHz (1152 kbps)");
             break;
         default:
             pos += snprintf(txBuf+pos, TX_BUF_SIZE-pos, "undefined");
@@ -635,7 +638,7 @@ bool ExecCommand(char* cmd, uint32_t cmdLen) {    // Execute user command and re
         // Send status message
         SendMessage(txBuf, pos);
         res = TRUE;
-    } else if (0 == strncmp(cmd, CMD_STOP, sizeof CMD_STOP)) {  // Compare incl. 0
+    } else if (0 == strncmp(cmd, CMD_STOP, sizeof CMD_STOP)) {      // Compare incl. 0
         // > stop
         regime = PAUSING;
         ChangeFreq(0.0f);   // Zero signal
@@ -646,7 +649,7 @@ bool ExecCommand(char* cmd, uint32_t cmdLen) {    // Execute user command and re
         // > fire С+5 100
         // > fire С-3 100
         // > fire 314.2 333
-        // > fire noise white 666
+        // > fire noise red 666
         pos = sizeof CMD_FIRE - 1;  // Position after the first space 'fire '
         char tone = cmd[pos];
         char lcTone = tone | 0x20;
@@ -1062,7 +1065,7 @@ bool ExecCommand(char* cmd, uint32_t cmdLen) {    // Execute user command and re
         }
         for (uint32_t i = 0; i <= FILT_DEPTH; i++)
             pos += snprintf(txBuf+pos, TX_BUF_SIZE-pos, " %.6f", IIR_B[i]);
-        txBuf[pos+0] = ' '; 
+        txBuf[pos+0] = ' ';
         txBuf[pos+1] = '/';
         pos += 2;
         for (uint32_t i = 0; i <= FILT_DEPTH; i++)
@@ -1230,7 +1233,7 @@ bool ExecCommand(char* cmd, uint32_t cmdLen) {    // Execute user command and re
         memcpy(iirPsc, freqs, (FILT_DEPTH+1) * sizeof(uint32_t));
         SendMessage(MSG_EQ_DEF, sizeof MSG_EQ_DEF - 1);
         res = TRUE;
-    } else if (0 == strncmp(cmd, CMD_GET_EQ, sizeof CMD_GET_EQ)) {  // Compare incl. 0
+    } else if (0 == strncmp(cmd, CMD_GET_EQ, sizeof CMD_GET_EQ)) {      // Compare incl. 0
         // > get equalizer
         pos = snprintf(txBuf, TX_BUF_SIZE, "Equalizer");
         if (doFilter)
@@ -1391,7 +1394,7 @@ void SetupRandoms(void) {   // Configure RNG and ADC3.INP0 to measure floating a
     iirPos = 0;
     for (uint32_t i = 0; i <= FILT_DEPTH; i++)
         iirPsc[i] = i;
-    
+
     // Somewhat long operations
     memset(iirInp, 0, sizeof(iirInp));
     memset(iirOut, 0, sizeof(iirOut));
@@ -1491,9 +1494,9 @@ void SetupUART(uint32_t usartFreq) {    // Configure UART on GPIOA pins PA9 (TX)
 
     // Setup UART operation regime
     LL_USART_DisableOverrunDetect(USART1);  // Do not generate false interrupts with ORE
-    LL_USART_EnableDirectionTx(USART1); // Turn on UART transmitter
-    LL_USART_EnableDirectionRx(USART1); // Turn on UART receiver
-    LL_USART_EnableIT_RXNE(USART1);     // Enable IRQ when receive buffer is not empty 'RXNE'
+    LL_USART_EnableDirectionTx(USART1);     // Turn on UART transmitter
+    LL_USART_EnableDirectionRx(USART1);     // Turn on UART receiver
+    LL_USART_EnableIT_RXNE(USART1);         // Enable IRQ when receive buffer is not empty 'RXNE'
 
     // Attach IRQ handler on RXNE interrupt (receive buffer not empty)
     NVIC_SetPriority(USART1_IRQn, 32);  // Higher priority than for TIMx
@@ -1576,7 +1579,6 @@ int main(void) {
 void TIM5_IRQHandler(void) {    // This IRQ is triggered 2 times per second by TIM5
     LL_TIM_ClearFlag_UPDATE(TIM5);  // Clear the interrupt flag
     LL_GPIO_TogglePin(GPIOA, LL_GPIO_PIN_1);    // Change status/UART LED state
-    // LL_GPIO_ResetOutputPin(GPIOG, LL_GPIO_PIN_14);  // Turn off UART LED when not in streaming mode
 }
 void TIM3_IRQHandler(void) {    // This IRQ is triggered when TIM3 stops in one-pulse mode
     LL_TIM_ClearFlag_UPDATE(TIM3);  // Clear the interrupt flag
@@ -1689,10 +1691,10 @@ void TIM2_IRQHandler(void) {    // This IRQ is triggered 'BASE_FREQ' times per s
             // Scale streamed audio by the amplitude and clamp if needed
             sL *= amp;
             sR *= amp;
-            if (sL > +1.1f) sL = +1;
-            if (sR > +1.1f) sR = +1;
-            if (sL < -1.1f) sL = -1;
-            if (sR < -1.1f) sR = -1;
+            if (sL > +1.1f) sL = +1.0f;
+            if (sR > +1.1f) sR = +1.0f;
+            if (sL < -1.1f) sL = -1.0f;
+            if (sR < -1.1f) sR = -1.0f;
             sampleL = MID_CODE * (1.0f + sL) - 1U;
             sampleR = MID_CODE * (1.0f + sR) - 1U;
         }
@@ -1725,14 +1727,6 @@ void TIM2_IRQHandler(void) {    // This IRQ is triggered 'BASE_FREQ' times per s
             uint32_t npos, idx1;
             if (iirPos > 0) npos = iirPos - 1;
             else npos = FILT_MEM - 1;
-            // Some filters for noise synthesis
-            #define DIFF_LEN 5
-            const float32_t DIFF_B[DIFF_LEN] = {-1/12.0f, 2/3.0f, 0.0f, -2/3.0f, 1/12.0f};
-            #define DIFF2_LEN 5
-            const float32_t DIFF2_B[DIFF2_LEN] = {-1/12.0f, 4/3.0f, -5/2.0f, 4/3.0f, -1/12.0f};
-            #define PINK_LEN 4
-            const float32_t PINK_B[PINK_LEN] = {0.049922035f, -0.095993537f, 0.050612699f, -0.004408786f};
-            const float32_t PINK_A[PINK_LEN] = {1.0f,         -2.494956002f, 2.017265875f, -0.522189400f};
             // Modify noise if needed
             switch (noiseType) {
             case NOISE_WHITE:
@@ -1837,7 +1831,7 @@ void TIM2_IRQHandler(void) {    // This IRQ is triggered 'BASE_FREQ' times per s
                 s1 = 0;
             }
         } else {
-            // Synthesize normal waveform
+            // Synthesize conventional waveform
             float32_t t = 2*PI * (seconds + cycle / ((float32_t) BASE_FREQ));
             switch (waveType) {
             case WAVE_SIN:
