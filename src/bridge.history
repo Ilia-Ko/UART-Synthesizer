@@ -1,0 +1,1000 @@
+set filter 1 0 2
+fire noise 10000
+set filter 1 0 3
+fire noise 10000
+set filter 1 0 4
+fire noise 10000
+set filter 1 0 6
+fire noise 10000
+set filter 1 2 4 8
+fire noise 10000
+set filter 1 2 4 8 16 32
+fire noise 10000
+fire noise 1000
+set filter 1 2 4 8 16 32
+get filter
+set filter on
+fire noise 1000
+fire noise 10000
+set filter on
+set filter 1 2 4 8 16 32
+fire noise 10000
+set filter on
+set filter 1 2 4 8 16 32
+fire noise 10000
+set filter on
+set filter 1 2 4 8 16 32
+fire noise 10000
+set filter 1
+fire noise 1000
+set filter 1
+set filter o
+set filter on
+fire noise 1000
+set filter off
+fire noise 1000
+fire noise 10000
+fire noise 1000
+set filter on
+get filter
+fire noise 1000
+fire noise 10000
+set filter 1
+fire noise 1000
+set filter on
+fire noise 1000
+set filter 1 1
+fire noise 1000
+set filter 1 1 1
+fire noise 1000
+set filter 1 1 1 1
+fire noise 1000
+set filter 1 2 4 8
+get filter
+set filter 1 2 4 8
+fire noise 1000
+set wave sin 2
+fire noise 1000
+set wave sin 4
+fire noise 1000
+set wave sin 8
+fire noise 1000
+set wave sin 4
+fire noise 1000
+set filter 1 2 4 8 16 32 64
+fire noise 1000
+set wave sin 8
+fire noise 1000
+set wave sin 16
+fire noise 1000
+set wave sin 32
+fire noise 1000
+set wave sin 20
+fire noise 1000
+fire F-1 100
+fire F-1 500
+set wave rect 1
+fire F-1 500
+set wave sin
+fire F-1 500
+set filter off
+get filter
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 2
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 4
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 8
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 20
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 50
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1e2
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+get wave
+set wave sin 1e3
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set filter on
+get filter
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set filter 1
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set filter 1
+set wave 1
+set wave sin 1
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.001
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.01
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.1
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.2
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.3
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.4
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.5
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.6
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+get filter
+set wave sin 1.8
+get filter
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 1.9
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 2.0
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.0
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 4.0
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.5
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3..4
+get wave
+set wave sin 3.4
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.45
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.48
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.49
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.5
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.55
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.6
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.7
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 3.8
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 4.0
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave sin 5.0
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+set wave 1
+set wave sin 1
+set filter off
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/6. Tin Pan Alley.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/7. Honey Bee.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1984 - Couldn't Stand the Weather/8. Stang's Swang.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1983 - Texas Flood/01. Love Struck Baby.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1983 - Texas Flood/02. Pride and Joy.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1983 - Texas Flood/03. Texas Flood.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1983 - Texas Flood/04. Tell Me.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1983 - Texas Flood/05. Testify.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1983 - Texas Flood/06. Rude Mood.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1983 - Texas Flood/07. Mary Had a Little Lamb.flac"
+play "/run/media/ilia/Media-Base/Музыка/Stevie Ray Vaughan/1983 - Texas Flood/08. Dirty Pool.flac"
+quit
+get equalizer
+get filter
+fire noise 100
+fire noise 1000
+set filter on
+set filter 1
+fire noise 1000
+set filter off
+fire noise 1000
+set filter off
+set filter 1
+set filter on
+fire noise 1000
+set filter off
+fire noise 1000
+fire noise 10000
+set filter on
+fire noise 10000
+get filter
+get equalizer
+set filter 1 0 0 0 0 0 0 9
+fire noise 10000
+set filter 1
+fire noise 10000
+set filter 1 9
+fire noise 10000
+set equalizer 48e3 3e3
+set equalizer 48000 3e3
+set equalizer 47999 3e3
+get equalizer
+get filter
+fire noise 10000
+set equalizer 47999 2e3
+fire noise 10000
+set equalizer 47999 1e3
+fire noise 10000
+set equalizer 47999 440
+fire noise 10000
+set equalizer 47999 110
+fire noise 10000
+set filter 1 3
+fire noise 10000
+set filter 1 1
+fire noise 10000
+set filter 1 2
+fire noise 10000
+set equalizer 24e3 440 220 880
+get equalizer
+set filter 1 1 1 1
+fire noise 10000
+fire noise 100
+get filter
+set filter 47999 24e3 440 220 880 500
+set equalizer 47999 24e3 440 220 880 500
+set filter 1 1 1 1 1
+get filter
+get equalizer
+set filter 1 1 1 1 1 1
+fire noise 100
+fire noise 1000
+fire noise 10000
+set filter 0.1 1 1 1 1 1
+fire noise 10000
+set filter 1 2 3 1 4 2
+fire noise 10000
+set filter off
+fire noise 10000
+set filter on
+fire noise 10000
+set equalizer 47999 440
+set filter 1 9
+fire noise 10000
+set filter 1 5
+fire noise 10000
+set equalizer 47999 440 220
+fire noise 10000
+get equalizer
+set filter 1 5 5
+fire noise 10000
+set filter 1 5 9
+fire noise 10000
+set filter 1 5 99
+fire noise 10000
+set filter 2 5 9
+fire noise 10000
+set filter 2 0 9
+fire noise 10000
+set filter 2 1 9
+fire noise 10000
+set filter 2 2 9
+fire noise 10000
+set filter 1 2 9
+fire noise 10000
+set filter 1 3 9
+fire noise 10000
+set filter 1 1 9
+fire noise 10000
+set filter 1 0.1 9
+fire noise 10000
+set equalizer 47999 440 110
+fire noise 10000
+set equalizer 47999 220 110
+fire noise 10000
+set filter 1 1 9
+fire noise 10000
+set equalizer 47999 220 110 50 60 70 80
+get equalizer
+set equalizer 47999 220 110 50 60 70 80 90
+get equalizer
+set filter 1 0.1 0.2 0.3 0.4 0.5 0.6 0.7
+get filter
+fire noise 10000
+set filter 0.7 0.1 0.2 0.3 0.4 0.5 0.6 0.7
+fire noise 10000
+set filter 0.5 0.1 0.2 0.3 0.4 0.5 0.6 0.7
+fire noise 10000
+set filter 0.1 0.1 0.2 0.3 0.4 0.5 0.6 0.7
+fire noise 10000
+set filter 1 0.1 0.2 3 0.4 0.5 0.6 0.7
+fire noise 10000
+set filter 1 0.1 0.2 3 0.4 0.5 0.6 7
+fire noise 10000
+set filter 1 0.1 0.2 0.3 4 0.5 0.6 7
+fire noise 10000
+set filter 1 0.1 0.2 0.3 4 0.5 -0.6 7
+fire noise 10000
+set filter 1 -0.1 0.2 0.3 4 0.5 -0.6 7
+fire noise 10000
+set filter 1 -0.1 -0.2 0.3 4 0.5 -0.6 7
+fire noise 10000
+set filter 1 -0.1 -0.15 0.3 4 0.5 -0.6 7
+fire noise 10000
+set filter 1
+fire noise 10000
+set filter 1 -0.1 -0.15 0.3 4 0.5 -0.6 7
+fire noise 10000
+set filter 1
+fire noise 10000
+set filter 1 -0.1 -0.11 0.3 4 0.5 -0.6 7
+fire noise 10000
+set filter 1
+fire noise 10000
+set filter 1 -0.1 -0.1 0.3 4 0.5 -0.6 7
+fire noise 10000
+fire noise 20000
+set filter 1 -0.1 0.1 0.3 4 -0.1 -0.6 7
+fire noise 20000
+set filter 1
+fire noise 20000
+set filter 1 -0.1 0.1 0.3 4 -0.1 -0.3 7
+fire noise 20000
+set filter 1 -0.1 0.1 0.2 4 -0.1 -0.3 7
+fire noise 20000
+set filter 1
+fire noise 20000
+set filter 1 -0.1 0.1 0.2 4 -0.1 -0.3 7
+fire noise 20000
+set filter 1 -0.1 0.1 0.2 4 0.1 -0.3 7
+fire noise 20000
+set filter 1 -0.1 0.1 0.2 4 0.1 -0.1 7
+fire noise 20000
+get equalizer
+set equalizer 47999 50 60 70 80 90 100
+get equalizer
+set equalizer 47999 40 50 60 70 80 90 100
+set equalizer 47999 50 55 60 65 70 75
+get equalizer
+set equalizer 47999 50 55 60 65 70 75 80
+get equalizer
+set filter 1
+fire noise 20000
+set filter 1 1
+fire noise 20000
+set filter 1 0.1
+fire noise 20000
+set filter 1 0.2
+fire noise 20000
+set filter 1 0.2 0.2 0.2 0.2 0.2 0.2 0.2
+get filter
+fire noise 20000
+set filter 1 0.2 0.3 0.4 0.5 0.6 0.7 0.8
+fire noise 20000
+set filter 1 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set filter 2 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set filter 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set filter 0.8 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set filter 0.2 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set wave sin 5
+fire noise 20000
+set filter 0.1 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set filter 0.01 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set wave sin 1e2
+fire noise 20000
+set filter 0.001 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set wave sin 1e3
+fire noise 20000
+set filter -0.001 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set filter -0.01 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+fire noise 20000
+set wave sin 1e1
+fire noise 20000
+set wave sin 1e2
+fire noise 20000
+set filter -0.1 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+set wave sin 1e1
+fire noise 20000
+set filter 1
+fire noise 20000
+set wave sin 1
+fire noise 20000
+set filter -0.1 0.9 0.8 0.7 0.6 0.5 0.4 0.3
+fire noise 20000
+set filter 1
+fire noise 20000
+set filter -0.05 0.9 0.8 0.7 0.6 0.5 0.4 0.3
+fire noise 20000
+set filter 1
+fire noise 20000
+set wave sin 10
+set filter -0.05 0.9 0.8 0.7 0.6 0.5 0.4 0.3
+fire noise 20000
+set filter -0.02 0.9 0.8 0.7 0.6 0.5 0.4 0.3
+fire noise 20000
+set filter  1
+fire noise 20000
+set filter -0.02 0.9 0.8 0.7 0.6 0.5 0.4 0.3
+fire noise 20000
+set filter -0.01 0.9 0.8 0.7 0.6 0.5 0.4 0.3
+fire noise 20000
+set filter 0.01 0.9 0.8 0.7 0.6 0.5 0.4 0.3
+fire noise 20000
+set filter 0.01 0.9 0.8 0.7 0.6 0.5 0.4 -0.3
+fire noise 20000
+set filter 0.01 -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3
+fire noise 20000
+set filter 0.1 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3
+fire noise 20000
+set filter 0.3 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3
+fire noise 20000
+set filter 0.7 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3
+fire noise 20000
+set filter 1 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3
+fire noise 20000
+set filter 2 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3
+fire noise 20000
+set filter  1
+fire noise 20000
+set filter 1
+fire noise 20000
+set entropy RNG
+fire noise 20000
+get filter
+get equalizer
+set filter 1
+set entropy RNG
+fire noise 1000
+status
+set filter 2 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3 -0.3
+set equalizer 47999 50 55 60 65 70 75 80
+set filter on
+get filter
+get equalizer
+fire noise 10000
+set filter 1
+fire noise 10000
+set entropy RNG
+fire noise 10000
+get filter
+get equalizer
+set entropy RNG
+set entropy ADC
+set entropy RNG
+fire noise 10000
+fire C 100
+fire C 10000
+status
+fire E 10000
+status
+fire G 10000
+status
+stop
+set equalizer 261.626 329.628 391.995
+get equalizer
+set filter 0.2 0.2 0.2 1
+get filter
+set filter on
+fire noise 10000
+set filter 0.2 0.2 0.2 0.1
+fire noise 10000
+set wave sin 3
+set wave sin 6
+set filter 0.2 0.2 0.2 0.01
+fire noise 10000
+set filter 0.8 0.4 0.2 1
+fire noise 10000
+set wave sin 1
+set filter 1.8 0.4 0.2 1
+set wave sin 1
+fire noise 10000
+set filter 2.8 0.4 0.2 1
+set filter 4 0.4 0.2 1
+fire noise 10000
+set filter 4 4 4 1
+set wave sin 4
+fire noise 10000
+set filter 4 4 4 0.1
+set filter 4 4 4 1
+fire noise 10000
+set filter 4 2 1 1
+fire noise 10000
+set filter 4 2 1 1
+fire noise 10000
+set filter 4 -1 4 1
+fire noise 10000
+set filter 4 1 4 1
+fire noise 10000
+set filter 4 -0.1 4 1
+fire noise 10000
+set filter 4 4 4 1
+fire noise 10000
+set filter -0.1 4 4 1
+fire noise 10000
+set filter -0.2 4 4 1
+fire noise 10000
+set filter 3 4 4 1
+set filter 6 4 4 1
+fire noise 10000
+set filter 6 4 -0.1 1
+fire noise 10000
+set filter 1 -1 1 -1
+set wave sin 1
+fire noise 10000
+set entropy ADC
+fire noise 10000
+set entropy RNG
+set filter 1 -1 -1 1
+fire noise 10000
+set entropy ADC
+set entropy RNG
+set entropy ADC
+set entropy RNG
+set entropy ADC
+set filter -1 1 -1 1
+fire noise 10000
+set entropy ADC
+set entropy RNG
+set entropy ADC
+fire noise 10000
+set entropy RNG
+fire noise 10000
+set filter -1 1.1 -0.9 1
+get filter
+set filter -1 0.9 -0.9 1
+get filter
+fire noise 10000
+set entropy ADC
+set entropy RNG
+set entropy ADC
+fire noise 1000
+set filter -0.8 0.9 -0.9 1.1
+get filter
+fire noise 1000
+set entropy RNG
+fire noise 1000
+set filter 1
+set filter 1 0 0 0.1
+fire noise 1000
+set entropy ADC
+fire noise 1000
+set entropy RNG
+fire noise 1000
+fire noise 10000
+set filter 1 0.01 0 0.1
+fire noise 10000
+set equalizer 100 150 200
+get filter
+get equalizer
+set file 1 0.1 0.1 1
+set filter  1 0.1 0.1 1
+fire noise 1000
+fire noise 10000
+set filter  1 0.1 0.1 0.1
+fire noise 10000
+fire noise 3000
+fire noise 2000
+set filter  2 0.1 0.1 0.1
+fire noise 2000
+set filter  2 0.1 0.2 0.1
+fire noise 2000
+set filter  2 0.3 0.2 0.1
+fire noise 2000
+set filter  2 0.9 0.2 0.1
+fire noise 2000
+set filter  2 0.9 1.3 0.1
+fire noise 2000
+set filter  2 0.9 1.5 0.1
+fire noise 2000
+get equalizer
+set filter  2 0.9 0.1 0.1
+get equalizer
+fire noise 2000
+set filter  2 0.9 0.1 -0.1
+fire noise 2000
+set wave sin 5
+fire noise 2000
+set wave sin 10
+fire noise 2000
+set wave sin 100
+fire noise 2000
+set wave sin 20
+fire noise 2000
+set wave sin 30
+fire noise 2000
+set filter  2 0.9 0.11 -0.1
+fire noise 2000
+set filter  2 0.9 0.1 -0.1
+fire noise 2000
+set filter  2 0.91 0.1 -0.1
+fire noise 2000
+set filter 2.1 0.91 0.1 -0.1
+fire noise 2000
+set filter 1.9 0.91 0.1 -0.1
+fire noise 2000
+set filter 2 0.91 0.1 -0.1
+fire noise 2000
+set filter 2 0.9 0.1 -0.1
+fire noise 2000
+set wave sin 1
+fire noise 2000
+get entropy
+set entropy ADC
+fire noise 2000
+set entropy RNG
+fire noise 2000
+set wave sin 0.1
+fire noise 2000
+set wave sin 0.01
+fire noise 2000
+set wave sin 0.001
+fire noise 2000
+set wave sin 0.1
+fire noise 2000
+set entropy ADC
+fire noise 2000
+set filter 0 0 0 1
+fire noise 2000
+set entropy RNG
+fire noise 2000
+set wave sin 1
+fire noise 2000
+get filter
+set filter off
+impr scale F-1/pent.maj
+set wave rect 0.2
+set wave saw 0.2
+set wave saw 0.3
+set wave 3ang 1
+set wave sin 1
+set wave sin3 1
+set wave sin5 1
+set wave sin3 1
+set wave sin3 0.6
+set filter 1
+get filter
+set filter 1
+get filter
+set filter on
+get filter
+set filter 1 0 0 0 0 9
+get filter
+set filter 1 0 0 0 0 9
+get entropy
+status
+set beat 200
+set filter 1 0 0 0 9
+set filter 1 0 0 0 
+set filter 1 0 0 0
+get filter
+set filter off
+get filter
+set filter 1 9
+get filter
+set filter on
+status
+exit
+hel
+help
+impr scale F-1/lydian
+get filter
+set filter 1 0.5 9
+set filter on
+impr scale F-1/mixolydian
+impr scale F-1/dorian 200
+impr scale F-1/dorian 150
+impr scale F-1/mixolydian
+impr scale F/lydian
+impr scale C/lydian
+impr scale B-1/lydian
+impr scale A-1/lydian
+impr scale A-1/phrygian
+impr scale A-1/locrian
+set filter 1 0.1 0.1 -0.1 9
+impr scale A-1/japanese
+impr scale A-1/har.min
+impr scale A-1/mel.min
+resbuf
+exit
+status
+impr A-1/blues 200
+impr A-1/blues-7 200
+impr scale A-1/blues 200
+impr scale A-1/blues 100
+set filter 1 0 0 0 0 9
+set filter on
+set filter 1 0 0 9
+set filter 1 0 0 3
+set filter 1 3
+set filter 1 0 0 0 0 0 0 3
+impr scale A-1/blues-9 100
+impr scale A-1/blues-7 100
+impr scale A-1/blues 100
+resbuf
+impr scale A-1/blues-9 100
+impr scale A-1/blues-9 150
+set filter 1 0 0 0 0 0 0 3
+set filter on
+set pattern 1 1 1 1 1 1 1 2
+get pattern
+set pattern 1 1 1 1 1 2
+get pattern
+set pattern 1 1 1 1 2
+set filter 1 0 0 0 5
+get filter
+set wave sin3
+impr scale A-1/blues-9 200
+resbuf
+impr scale A-1/blues-9 200
+set wave sin3
+set wave saw 0.4
+set wave saw 0.5
+set wave rect 0.5
+set wave 3ang 1
+set wave sin 1
+set wave sin3 1
+stop
+resbuf
+fire noise 100
+fire noise 1000
+fire noise 10000
+play "/run/media/ilia/Media-Base/Музыка/Slayer/2015 - Repentless/08. Implode.flac"
+set filter on
+set equalizer 110
+get equalizer
+set filter 1 1
+get filter
+play "/run/media/ilia/Media-Base/Музыка/Slayer/2015 - Repentless/08. Implode.flac"
+play "/run/media/ilia/Media-Base/Музыка/Judas Priest/2001 - Demolition/02. One on One.flac"
+fire D-1 1000
+set wave saw 0.5
+fire D-1 1000
+fire D-1 10000
+status
+stop
+set equalizer 146.832
+get equalizer
+play "/run/media/ilia/Media-Base/Музыка/Judas Priest/2001 - Demolition/02. One on One.flac"
+get filter
+play "/run/media/ilia/Media-Base/Музыка/Judas Priest/2001 - Demolition/02. One on One.flac"
+set wave saw 1
+play "/run/media/ilia/Media-Base/Музыка/Judas Priest/2001 - Demolition/02. One on One.flac"
+set filter off
+play "/run/media/ilia/Media-Base/Музыка/Judas Priest/2001 - Demolition/02. One o
+play "/run/media/ilia/Media-Base/Музыка/Kontrust/2009 - Time to Tango/15. Bomba.flac"
+play "/run/media/ilia/Media-Base/Музыка/Kontrust/2009 - Time to Tango/14. Känämänännä.flac"
+play "/run/media/ilia/Media-Base/Музыка/Kontrust/2009 - Time to Tango/12. Vodka, Tribe and Dynamite.flac"
+play "/run/media/ilia/Media-Base/Музыка/Kontrust/2009 - Time to Tango/13. Zero.flac"
+play "/run/media/ilia/Media-Base/Музыка/System of a Down/2005 - Mezmerize/05. Radio∕Video.flac"
+quit
+ping
+fire C-1 10000
+fire F-1 1000
+help
+fire noise 100
+impr ladder
+play "/run/media/ilia/HiFi-Audio/Accept/2021 - Too Mean to Die/11. Samson and Delilah.flac"
+clear
+exit
+help
+fire 440 1000
+fire F-1 500
+fire 342.894 200
+fire noise 100
+fire noise 1000
+get entropy
+set entropy ADC
+fire noise 1000
+get entropy
+fire noise 1000
+set entropy RNG
+fire noise 1000
+get wave
+set wave sin
+fire A 1000
+set wave sin3
+fire A 1000
+set wave sin5
+fire A 1000
+set wave rect
+set wave rect 0.5
+fire A 1000
+set wave 3ang
+fire A 1000
+set wave sin
+fire A 1000
+set wave 3ang
+fire A 1000
+set wave 3ang 1
+fire A 1000
+set wave 3ang 1.6
+fire A 1000
+set wave 3ang 1
+fire A 1000
+set wave saw
+fire A 1000
+set wave sin 11
+set wave sin 1
+fire A 1000
+impr ladder
+stop
+impr chaos
+stop
+impr scale F-1/maj 300
+set wave sin3
+set wave 3ang
+set wave rect
+set wave saw
+set wave sin
+get pattern
+set pattern 1 1 1 1 1 1 4/3 8/3
+get pattern
+set pattern mutability 0.1
+get pattern
+set pattern mutability 0.5
+get pattern
+set pattern 1
+get pattern
+stop
+impr scale F-1/maj 300
+impr scale d/blues 250
+impr scale d-1/blues 250
+stop
+set pattern 1 1 2
+get pattern
+impr ladder
+stop
+set pattern 1 1/2 3/2 1 3/2 1/2 1 1
+impr ladder
+stop
+set pattern 1 1/2 3/2 1 3/2 1/2 1
+impr ladder
+stop
+fire noise 1000
+set entropy ADC
+fire noise 1000
+set entropy RNG
+fire noise 100
+impr ladder
+get pattern
+set pattern stable
+get pattern
+stop
+set pattern 1
+impr scale F-1/blues 250
+get filter
+set filter on
+set filter 1 9
+set filter 1 8
+get filter
+set filter 1 0 0 0 0 8
+get filter
+set filter 1 0 0 0 0 8 -1
+get filter
+stop
+set filter 1 0 0 0 0 0 0 5
+get filter
+fire noise 1000
+fire noise 10000
+stop
+set filter off
+fire noise 10000
+set equalizer 440.0
+get equalizer
+set filter 5 1
+get filter
+set filter on
+fire noise 10000
+set filter 9 1
+fire noise 10000
+stop
+set equalizer 220
+get equalizer
+fire noise 10000
+stop
+set equalizer 220 440 880
+get equalizer
+set equalizer 220 440
+get equalizer
+set filter 5 5 1
+get filter
+fire noise 10000
+stop
+set filter 9 5 1
+fire noise 10000
+stop
+set filter off
+play "/run/media/ilia/HiFi-Audio/Bach J.S. - Niedersachsen Orgeln/1992 - Bach Orgel-Werke Vol. 10/01. Präludium et Fuga in f BWV 534.flac"
+play "/run/media/ilia/HiFi-Audio/Metallica/1991 - Metallica/08. Nothing Else Matters.flac"
+exit
+status
+ping
+fire A 100
+fire A 1000
+impr F-1/japanese 200
+impr scale F-1/japanese 200
+stop
+status
+impr scale F-1/japanese 200
+stop
+impr scale F-1/japanese 200
+status
+stop
+exit
+ping
+status
+fire A 1000
+fire noise 100
+fire noise 1000
+play "/run/media/ilia/HiFi-Audio/Metal Church/1991 - The Human Factor/03. The Final Word.flac"
+exit
+ping
+status
+play "/home/ilia/MSU/Аспирантура/Программирование микроконтроллеров/FSDW_-_Wknd_Reloaded_8D_Audio_73598089.mp3"
+play "/run/media/ilia/HiFi-Audio/Cellar Darling/2019 - The Spell/09. Freeze.flac"
+fire noise white 30000
+fire noise pink 30000
+fire noise red 30000
+fire noise pink 30000
+fire noise white 30000
+fire noise pink 30000
+fire noise red 30000
+fire noise pink 30000
+fire noise white 30000
+status
+ping
+status
+ping
+status
+fire noise white 30000
+fire noise pink 30000
+fire noise red 30000
+status
+fire noise pink 30000
+status
+fire noise white 30000
+resbuf
+fire noise white 30000
+status
+fire noise white 30000
+fire noise pink 30000
+fire noise red 30000
+fire noise pink 30000
+fire noise white 30000
+fire noise blue 30000
+fire noise violet 30000
+fire noise uv 30000
+fire noise violet 30000
+fire noise uv 30000
+fire noise blue 30000
+fire noise white 30000
+fire noise blue 30000
+fire noise uv 30000
+fire noise blue 30000
+fire noise white 30000
+fire noise blue 30000
+fire noise uv 30000
+fire noise blue 30000
+fire noise white 30000
+fire noise pink 30000
+fire noise red 30000
+fire noise pink 30000
+fire noise white 30000
+fire noise blue 30000
+fire noise violet 30000
+fire noise uv 30000
+fire noise violet 30000
+stop
+get filter
+set filter 0.5 0 -0.5 / 1 -0.7
+get filter
+set filter on
+impr scale A-1/phrygian 300
+get filter
+set filter 0.5 0 -0.5 / 1 -0.9
+set filter 0.5 0 -0.5 / 1 -0.95
+status
+set filter 0.5 0 -0.5 / 1 -0.95
+get filter
+impr scale A-1/phrygian 300
+set wave 3ang 0.5
+set filter 0.5 0 -0.5 / 1 -0.94
+status
+fire noise red 10000
+status
+exit

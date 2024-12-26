@@ -1,0 +1,11 @@
+{
+    "cortex-debug.variableUseNaturalFormat": true,
+    "files.associations": {
+        "arm_math.h": "c",
+        "stm32f4xx_ll_rcc.h": "c",
+        "stm32f4xx_ll_utils.h": "c",
+        "math.h": "c",
+        "stm32f429xx.h": "c",
+        "stm32f4xx_ll_bus.h": "c"
+    }
+}
