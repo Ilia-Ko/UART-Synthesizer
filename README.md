@@ -6,17 +6,19 @@ You will need the following hardware components to launch this synthesizer:
 * STM32H743VIT6 evaluation board
 * Personal computer (for Python frontend utility and audio processing with FFmpeg)
 * USB-to-UART adapter with support for 2 MHz baudrate
-* STlink 32-bit firmware programming tool
+* STlink 32-bit firmware programming device
 * Audio speakers
 * Spare cable for audio speakers with Left, Right and GND wires
 * 200-500 Ohm trimmers and breadboard to plug them at (for low-impedance speakers only)
 
 ## Software components
 * STM32 CubeH7 distribution v1.12.1 https://github.com/STMicroelectronics/STM32CubeH7
-* STlink utilities https://www.st.com/en/development-tools/st-link-v2.html
+* STlink utilities v1.8.0 https://www.st.com/en/development-tools/st-link-v2.html
+* arm-none-eabi-gcc v14.2.0 https://gcc.gnu.org/
+* make v4.4.1 https://www.gnu.org/software/make/
 * (optional) Visual Studio Code or similar IDE
 * (optional) Cortex-Debug plugin for VSCode
-* python 3.12.7 https://www.python.org/
+* python v3.12.7 https://www.python.org/
     * Modules: os, sys, time, math, readline, wave, subprocess, multiprocessing, pyserial (as `serial`), tqdm
 * pyserial v3.4 https://github.com/pyserial/pyserial
 * tqdm v4.67.1 https://github.com/tqdm/tqdm
