@@ -428,7 +428,7 @@ while True:
         print("   impr scale F/maj 250          / Improvise in F-major with beat of 0.25 seconds")
         print("   set pattern 1 1 1/2 3/2       / Set beat pattern 4/4 with syncopation")
         print("   set pattern 1 3/7 2/5         / Set non-standard beat pattern 31/35")
-        print("   set filter 5 0 -1.1 / 1 -0.2  / Specify 3/1-order IIR filter")
+        print("   set filter 5 0 -1.1 / 1 -0.2  / Specify 2/1-order IIR filter")
         print()
         print("Please, use TAB completions in this shell")
         print()
