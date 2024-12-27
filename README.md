@@ -28,7 +28,7 @@ You will need the following hardware components to launch this synthesizer:
 1. Connect USB-to-UART adapter to the 'H743. RX (adapter) -- pin PA9, TX (adapter) -- pin PA10
 2. Connect STlink pins SWCLK, SWDIO, GND, 3.3V to the corresponding SWD pins on 'H743
 3. Connect 'H743 pins to audio speakers: PA4 -- Left, PA5 -- Right, GND -- GND. In case of low-impedance speakers insert 200-500 Ohm trimmers inbetween (PA4 -- 200 Ohm -- Left, PA5 -- 200 Ohm -- Right, GND -- GND)
-4. Plug STlink device and USB-to-UART adapter into your PC
+4. Plug STlink device into your PC
 5. Plug USB-to-UART adapter into your PC
 
 Example setup (for low-impedance audio speakers):
