@@ -1,3 +1,5 @@
+This branch `main-f429` is dedicated to STM32F429ZI Disco board. Please, find branch 'main-h743' for STM32H743VIT6 board.
+
 # UART-Synthesizer
 A firmware for STM32F429ZI Discovery board to be an UART audio synthesizer and UART audio player.
 
