@@ -463,7 +463,6 @@ void SendMessage(const char* msg, uint32_t msgLen) {    // Send a sequence of by
     for (uint32_t i = 0; i < msgLen; i++) {
         while (!LL_USART_IsActiveFlag_TC(USART1));  // Wait until previous transmission is completed
         LL_USART_TransmitData8(USART1, msg[i]);     // Send the next byte
-        LL_GPIO_TogglePin(GPIOG, LL_GPIO_PIN_14);   // Change UART LED state
     }
 }
 bool ParseTone(const char* str, uint32_t strLen, float32_t* freq) {
