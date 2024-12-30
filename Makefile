@@ -47,7 +47,7 @@ INCLUDES += -I$(VENDOR_ROOT)Drivers/STM32H7xx_HAL_Driver/Inc
 
 # Compiler Flags
 CFLAGS = -g -O2 -Wall -Wextra -Warray-bounds -Wno-unused-parameter
-CFLAGS += -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork
+CFLAGS += -mcpu=cortex-m7 -mthumb -mlittle-endian -mthumb-interwork
 CFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
 CFLAGS += -DSTM32H743xx
 CFLAGS += -DARM_MATH_CM7
